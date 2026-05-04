@@ -34,3 +34,4 @@ build/Release
 
 # Vitepress cache
 /docs/.vitepress/cache
+/docs/.vitepress/dist
