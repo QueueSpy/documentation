@@ -1,0 +1,114 @@
+@import url(https://fonts.bunny.net/css?family=jetbrains-mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i);
+
+:root {
+  --vp-c-brand: var(--color-sky-600);
+  --vp-c-brand-1: var(--color-sky-400);
+  --vp-c-brand-light: #ff5719;
+  --vp-c-brand-lighter: #ff7340;
+  --vp-c-brand-lighter: rgba(255, 135, 23, 0.25);
+  --vp-c-brand-dark: #ff622d;
+  --vp-c-brand-darker: #e23c00;
+  --vp-c-bg: var(--color-mist-900);
+
+  --vp-button-brand-bg: var(--color-sky-600);
+  --vp-button-brand-hover-bg: var(--color-sky-500);
+
+  --vp-c-sponsor: #fd1d7c;
+
+  --color-mist-50: oklch(14.1% 0.005 285.823);
+  --color-mist-100: oklch(21% 0.006 285.885);
+  --color-mist-200: oklch(27.4% 0.006 286.033);
+  --color-mist-300: oklch(37% 0.013 285.805);
+  --color-mist-400: oklch(44.2% 0.017 285.786);
+  --color-mist-500: oklch(55.2% 0.016 285.938);
+  --color-mist-600: oklch(70.5% 0.015 286.067);
+  --color-mist-700: oklch(87.1% 0.006 286.286);
+  --color-mist-800: oklch(92% 0.004 286.32);
+  --color-mist-900: oklch(96.7% 0.001 286.375);
+  --color-mist-950: oklch(98.5% 0 0);
+
+  /* Sky Colors */
+  --color-sky-950: oklch(29.3% 0.066 243.157);
+  --color-sky-900: oklch(39.1% 0.09 240.876);
+  --color-sky-800: oklch(44.3% 0.11 240.79);
+  --color-sky-700: oklch(50% 0.134 242.749);
+  --color-sky-600: oklch(58.8% 0.158 241.966);
+  --color-sky-500: oklch(68.5% 0.169 237.323);
+  --color-sky-400: oklch(74.6% 0.16 232.661);
+  --color-sky-300: oklch(82.8% 0.111 230.318);
+  --color-sky-200: oklch(90.1% 0.058 230.902);
+  --color-sky-100: oklch(95.1% 0.026 236.824);
+  --color-sky-50: oklch(97.7% 0.013 236.62);
+
+  /* Typography */
+  --vp-font-family-base: 'JetBrains Mono', monospace;
+
+  /* Code Snippet font */
+  --vp-font-family-mono: 'JetBrains Mono', monospace;
+
+  --vp-nav-logo-height: 32px;
+}
+
+.dark {
+  --color-mist-950: oklch(14.1% 0.005 285.823);
+  --color-mist-900: oklch(21% 0.006 285.885);
+  --color-mist-800: oklch(27.4% 0.006 286.033);
+  --color-mist-700: oklch(37% 0.013 285.805);
+  --color-mist-600: oklch(44.2% 0.017 285.786);
+  --color-mist-500: oklch(55.2% 0.016 285.938);
+  --color-mist-400: oklch(70.5% 0.015 286.067);
+  --color-mist-300: oklch(87.1% 0.006 286.286);
+  --color-mist-200: oklch(92% 0.004 286.32);
+  --color-mist-100: oklch(96.7% 0.001 286.375);
+  --color-mist-50: oklch(98.5% 0 0);
+}
+
+code, pre {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Custom Stlye */
+.custom-layout {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  min-height: 400px;
+  max-width: 1152px;
+  margin: 6rem auto 0;
+  border-radius: 10px;
+}
+
+.custom-layout h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.custom-layout .btn {
+  background-color: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+  border-radius: 20px;
+  padding: 0.5rem 1.4rem;
+}
+
+/* Removed borders between each sidebar option */
+.VPDocAsideOutline .outline-link,
+.VPSidebar .group + .group {
+  border-top: none !important;
+}
+
+/* Shrinks gap between each menu option on sidebar */
+.VPSidebarItem.level-0 {
+  padding-bottom: 8px !important; /* adjust to taste */
+}
+
+.VPImage.logo {
+  border-radius: 5px;
+}
