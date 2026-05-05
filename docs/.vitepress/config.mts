@@ -47,5 +47,17 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
       { icon: 'discord', link: 'https://discord.gg/TxfdASpmmx'}
     ]
+  },
+
+  sitemap: {
+    hostname: 'https://docs.queuespy.com',
+    transformItems: (items) => {
+      items.push({
+        url: '/supported-games/getting-started',
+        changefreq: 'weekly',
+        priority: 1.0
+      })
+      return items;
+    },
   }
 })
