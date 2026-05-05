@@ -35,3 +35,9 @@ build/Release
 # Vitepress cache
 /docs/.vitepress/cache
 /docs/.vitepress/dist
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
